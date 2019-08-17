@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# usage: $ cat key-value json | slack/post "Your message"
+
 jq --arg text "${1:-Incomming WebHook}" '{
     icon_emoji: ":rocket:",
     text: $text,
