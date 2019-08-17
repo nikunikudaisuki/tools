@@ -1,0 +1,11 @@
+#!/bin/bash
+
+jq --arg text "${1:-Incomming WebHook}" '{
+    icon_emoji: ":rocket:",
+    text: $text,
+    attachments: [
+      {
+        fields: [ to_entries | .[] | { title: .key, value, short: true } ]
+      }
+    ]
+}' | curl $SLACK_WEBHOOK -d "payload=$(cat -)"
