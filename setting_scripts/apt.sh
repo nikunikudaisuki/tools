@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install -y \
+sudo ${1} install -y \
   git \
   wget \
   vim \
