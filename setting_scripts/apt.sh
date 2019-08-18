@@ -6,4 +6,5 @@ apt-get install -y \
   vim \
   silver-searcher \
   nginx \
-  dstat
+  dstat \
+  htop
