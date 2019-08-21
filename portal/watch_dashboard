@@ -12,8 +12,7 @@ while true; do
   echo $data | jq .
   if [[ $update_at != $ts ]]; then
     update_at=$ts
-    echo
-    # echo $data | ./slack/post "新しいスコアがでたよ"
+    echo $data | ./slack/post "新しいスコアがでたよ"
   fi
 done
 
