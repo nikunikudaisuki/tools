@@ -11,3 +11,10 @@ fi
 ./percona.sh ${COMMAND}
 ./alp.sh
 ./mysql-tuner.sh
+
+sudo echo "isucon1 $IPADDR1" >> /etc/hosts
+sudo echo "isucon2 $IPADDR2" >> /etc/hosts
+sudo echo "isucon3 $IPADDR3" >> /etc/hosts
+
+sudo echo $1 > /etc/hosts
+sudo shutdown -r now
