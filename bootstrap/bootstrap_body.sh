@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /tmp
-if [ `ls -1 tools | wc -l` -eq 1 ]; then
+if [ -d tools ]; then
   git clone https://github.com/nikunikudaisuki/tools -b add_setting_scripts
 fi
 
