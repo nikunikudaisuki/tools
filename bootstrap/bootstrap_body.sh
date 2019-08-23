@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /tmp
-if [ -d tools ]; then
+if ! [ -d tools ]; then
   git clone https://github.com/nikunikudaisuki/tools -b add_setting_scripts
 fi
 
@@ -22,7 +22,7 @@ sudo echo "isucon1 $IPADDR1" >> /etc/hosts
 sudo echo "isucon2 $IPADDR2" >> /etc/hosts
 sudo echo "isucon3 $IPADDR3" >> /etc/hosts
 
-if [ -d $HOME/.ssh ]; then
+if ! [ -d $HOME/.ssh ]; then
   mkdir $HOME/.ssh
   chmod 700 $HOME/.ssh
 fi
