@@ -7,6 +7,8 @@ if [ ${1} -eq 'apt-get' ]; then
     vim \
     curl \
     dnsutils \
+    net-tools \
+    bash-completion \
     silver-searcher \
     nginx \
     dstat \
@@ -18,6 +20,8 @@ else
     vim \
     curl \
     bind-utils\
+    net-tools \
+    bash-completion \
     silver-searcher \
     nginx \
     dstat \
