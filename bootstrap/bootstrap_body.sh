@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd /tmp
+git clone https://github.com/nikunikudaisuki/tools
+cd tools/bootstrap
 if [ `ls -1 /etc/|grep redhat-release| wc -l` -eq 1 ]; then
   COMMAND=yum
 else
