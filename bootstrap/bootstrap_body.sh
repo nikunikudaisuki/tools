@@ -1,7 +1,10 @@
 #!/bin/bash
 
 cd /tmp
-git clone https://github.com/nikunikudaisuki/tools
+if [ `ls -1 tools | wc -l` -eq 1 ]; then
+  git clone https://github.com/nikunikudaisuki/tools -b add_setting_scripts
+fi
+
 cd tools/bootstrap
 if [ `ls -1 /etc/|grep redhat-release| wc -l` -eq 1 ]; then
   COMMAND=yum
@@ -20,4 +23,4 @@ sudo echo "isucon2 $IPADDR2" >> /etc/hosts
 sudo echo "isucon3 $IPADDR3" >> /etc/hosts
 
 sudo echo $1 > /etc/hosts
-sudo shutdown -r now
+#sudo shutdown -r now
