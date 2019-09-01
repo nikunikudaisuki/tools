@@ -1,0 +1,27 @@
+Host isucon8-*
+   IdentityFile  ~/.ssh/id_rsa.github
+   ForwardAgent yes
+
+Host isucon8-app1
+    User isucon
+    HostName xxx
+    IdentitiesOnly=yes
+    LocalForward 13306 0.0.0.0:3306
+    LocalForward 16060 0.0.0.0:16060
+    LocalForward 18080 0.0.0.0:80
+
+Host isucon8-app2
+    User isucon
+    HostName xxx
+    IdentitiesOnly=yes
+    LocalForward 23306 0.0.0.0:3306
+    LocalForward 26060 0.0.0.0:16060
+    LocalForward 28080 0.0.0.0:80
+
+Host isucon8-app3
+    User isucon
+    HostName xxx
+    IdentitiesOnly=yes
+    LocalForward 33306 0.0.0.0:3306
+    LocalForward 36060 0.0.0.0:16060
+    LocalForward 38080 0.0.0.0:80
