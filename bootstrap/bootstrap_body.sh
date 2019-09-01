@@ -2,7 +2,7 @@
 
 cd /tmp
 if ! [ -d tools ]; then
-  git clone https://github.com/chie8842/tools -b add_setting_scripts
+  git clone https://github.com/chie8842/tools
 fi
 
 cd tools/bootstrap
