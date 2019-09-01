@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -ex
+
+update_at="init value"
+
+while true; do
+  sleep 5
+  data=$(./portal/fetch_dashboard | ./portal/dashboard_html_to_json) 
+  ts=$(echo $data | jq '."Updated At"')
+  clear
+  echo $data | jq .
+  if [[ $update_at != $ts ]]; then
+    update_at=$ts
+    echo $data | ./slack/post "新しいスコアがでたよ"
+  fi
+done
+
