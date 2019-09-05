@@ -10,6 +10,7 @@
     net-tools \
     bash-completion \
     silversearcher-ag \
+    unzip \
     nginx \
     dstat \
     tcpdump \
