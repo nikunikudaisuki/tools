@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /tmp
+#cd /tmp
 #if ! [ -d tools ]; then
 #  git clone https://github.com/chie8842/tools
 #fi
@@ -12,13 +12,13 @@ cd /tmp
 #  COMMAND=apt-get
 #fi
 
-bash ./apt.sh # ${COMMAND}
-#bash ./netdata.sh
-bash ./alp.sh
-bash ./mysql-tuner.sh
-bash ./systemd.sh
-bash ./copy_conf.sh
-bash ./percona.sh # ${COMMAND}
+bash apt.sh # ${COMMAND}
+#bash netdata.sh
+bash alp.sh
+bash mysql-tuner.sh
+bash systemd.sh
+bash copy_conf.sh
+bash percona.sh # ${COMMAND}
 
 sudo echo "isucon1 $IPADDR1" >> /etc/hosts
 sudo echo "isucon2 $IPADDR2" >> /etc/hosts
