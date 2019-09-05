@@ -26,3 +26,4 @@ else
     nginx \
     dstat \
     htop
+fi
