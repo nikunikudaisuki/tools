@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ${1} -eq 'apt-get' ]; then
-  sudo ${1} install -y \
+#if [ ${1} -eq 'apt-get' ]; then
+  sudo apt install -y \
     git \
     wget \
     vim \
@@ -9,21 +9,25 @@ if [ ${1} -eq 'apt-get' ]; then
     dnsutils \
     net-tools \
     bash-completion \
-    silver-searcher \
+    silversearcher-ag \
     nginx \
     dstat \
-    htop
-else
-  sudo ${1} install -y \
-    git \
-    wget \
-    vim \
-    curl \
-    bind-utils\
-    net-tools \
-    bash-completion \
-    silver-searcher \
+    tcpdump \
     nginx \
-    dstat \
     htop
-fi
+#else
+#  sudo ${1} install -y \
+#    git \
+#    wget \
+#    vim \
+#    curl \
+#    bind-utils\
+#    net-tools \
+#    bash-completion \
+#    silver-searcher \
+#    nginx \
+#    dstat \
+#    tcpdump \
+#    nginx \
+#    htop
+#fi
