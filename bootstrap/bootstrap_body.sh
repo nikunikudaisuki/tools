@@ -33,3 +33,4 @@ curl https://github.com/TKNGUE.keys https://github.com/himkt.keys https://github
 chmod 600 $HOME/.ssh/authorized_keys
 #sudo echo $1 > /etc/hosts
 #sudo shutdown -r now
+bash ./put_dotfiles.sh
