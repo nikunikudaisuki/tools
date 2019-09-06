@@ -5,7 +5,7 @@ fi
 
 sudo cp ../configs/my.cnf /etc/my.cnf
 sudo chown root:root /etc/my.cnf
-chmod 644 /etc/my.cnf
+sudo chmod 644 /etc/my.cnf
 
 if [ -e /etc/nginx/nginx.conf ]; then
   sudo cp -p /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
